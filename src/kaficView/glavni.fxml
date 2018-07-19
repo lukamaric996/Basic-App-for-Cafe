@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="361.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kaficController.GlavniController">
+   <top>
+      <VBox>
+         <children>
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                  <Region maxHeight="-Infinity" minHeight="-Infinity" prefHeight="27.0" prefWidth="236.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Region>
+                  <Label prefHeight="53.0" prefWidth="173.0" text="Caffe bar">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Region maxHeight="-Infinity" minHeight="-Infinity" prefHeight="32.0" prefWidth="208.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#narudzbe" text="Narudžbe">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#pica" text="Pića">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="52.0" layoutY="10.0" mnemonicParsing="false" onAction="#korisnici" text="Korisnici">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="poruka">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Region maxHeight="-Infinity" minHeight="-Infinity" prefHeight="24.0" prefWidth="211.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Region>
+                  <Button mnemonicParsing="false" onAction="#odjava" text="odjava" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>
